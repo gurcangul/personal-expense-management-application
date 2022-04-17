@@ -1,38 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 .App {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+.total {
+  margin: auto;
+  padding: 3px;
+  background-color: rgb(61, 90, 90);
+  width: 60%;
+}
+.total h1
+
+.operation{
+  list-style-type: none;
+}
+.IncomeExpenseList{
+  padding: 3px;
+  background-color: rgb(83, 145, 145);
+  width: 60%;
+  margin: auto;
+  list-style-type: none;
+}
+.IncomeExpenseList ul{
+  list-style-type: none;
+}
+.content{
+  background-color: #a7a5a5;
+  width: 50%;
+  margin: auto;
+  padding:10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: 'Lato', sans-serif;
+  color: #f7f7f7;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.addOperation{
+  padding: 2px;
+  background-color: rgb(34, 48, 48);
+  width: 60%;
+  margin: auto;
 }
+.IncomeExpenseInfo{
+  width: 33%;    text-align: left; 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
+.graph{
+  width: 22%;  padding-left: 12px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.prediction{
+  width: 45%;  text-align: left;padding-left: 12px;
+}
+.sub-div{
+  background-color: rgb(37, 45, 83);
+  padding: 5px;
+  width: 100%;  
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

@@ -1,15 +1,16 @@
-import React from 'react'
+import React, {useContext} from 'react';
+import { GlobalContext } from '../context/GlobalContext';
+import { Operation } from './Operation';
 
 export const IncomeExpenseList = () => {
-  return (
-    <div>
+  const { operations } = useContext(GlobalContext);
+  
+  return (    
+    <div className='IncomeExpenseList'>
         <h3>Income and Expense List </h3>
         <ul>
-            <li>Income</li>
-            <li>Expense</li>
-
+            {operations.map(operation => (<Operation key={operation.id} operation={operation} />))}
         </ul>
-
     </div>
   )
 }
