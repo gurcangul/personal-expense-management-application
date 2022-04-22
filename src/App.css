@@ -11,10 +11,18 @@
   background-color: rgb(61, 90, 90);
   width: 60%;
 }
-.total h1
+.total h1{}
 
 .operation{
   list-style-type: none;
+  background-color: rgb(255, 255, 255);
+  box-shadow: var(--box-shadow);
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 15px;
 }
 .IncomeExpenseList{
   padding: 3px;
@@ -25,6 +33,7 @@
 }
 .IncomeExpenseList ul{
   list-style-type: none;
+  padding: 0;
 }
 .content{
   background-color: #a7a5a5;
@@ -43,16 +52,26 @@
   width: 60%;
   margin: auto;
 }
+.addOperation-form-div{
+  padding: 5px;margin: auto;
+  margin-bottom: 10px; width: 70%;
+  background-color: rgb(172 170 170 / 14%);
+}
+.addOperation-form-form{
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
 .IncomeExpenseInfo{
   width: 33%;    text-align: left; 
 
 }
 .graph{
-  width: 22%;  padding-left: 12px;
+  width: 33%;  
 
 }
 .prediction{
-  width: 45%;  text-align: left;padding-left: 12px;
+  width: 33%;  text-align: left;padding-left: 12px;
 }
 .sub-div{
   background-color: rgb(37, 45, 83);

@@ -1,6 +1,5 @@
 import { Doughnut } from 'react-chartjs-2'
 import 'chart.js/auto';
-import { Chart } from 'react-chartjs-2';
 import {useContext} from 'react'
 import { GlobalContext } from '../../context/GlobalContext';
 
@@ -20,7 +19,7 @@ import { GlobalContext } from '../../context/GlobalContext';
   const data = {
     label:["Red","Blue"],
     datasets:[{
-      data:[income, expense],
+      data:[expense,income],
       backgroundColor: [
         "red",
         "blue"

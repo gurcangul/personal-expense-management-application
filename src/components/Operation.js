@@ -8,8 +8,9 @@ export const Operation = ({ operation }) => {
 
   return (
     <li className='operation'>
-      {operation.title} <span>    installment:     {operation.installment}       </span><span>    amount: {sign}{operation.amount}</span>
-      <span>    ==== total:     {operation.installment*operation.amount}       </span>
+      {operation.title} 
+      <span>    installment:     {operation.installment}       </span><span>    amount: {sign}{operation.amount}</span>
+      <span>     total:     {operation.installment*operation.amount}       </span>
       <button onClick={() => deleteOperation(operation.id)}>x</button>
     {console.log(operation.installment)}
     </li>

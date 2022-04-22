@@ -1,4 +1,3 @@
-import { clear } from '@testing-library/user-event/dist/clear';
 import React, {useState, useContext} from 'react'
 import { GlobalContext } from '../context/GlobalContext';
 
@@ -39,36 +38,35 @@ export const AddOperation = () => {
     return (
         <div className='addOperation'>
             <h3>Add Expense or Income</h3>
-            <form onSubmit={onSubmit}>
-                <div>
-                    <label>Title </label>
+            <form onSubmit={onSubmit} className='addOperation-form-form'>
+                <div className='addOperation-form-div'>
+                    <label>Title </label> <br></br>
                     <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Enter a title" />
                 </div>
 
-                <div>
-                    <label>Amount </label>
+                <div className='addOperation-form-div'>
+                    <label>Amount </label><br/>
                     <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)}  />
                 </div>
-                <div>
-                    <label>Installment </label>
+                <div className='addOperation-form-div'>
+                    <label>Installment </label><br/>
                     <input type="number" value={installment} onChange={(e) => setInstallment(e.target.value)}  min="1"/>
                 </div>
-                
-
-                    <br/>
-                <div>
-                    <label>Choose a current Income/Expense:</label>
+                <hr></hr>Or  
+                    <br/><br/>
+                <div className='addOperation-form-div'>
+                    <label>Choose a current Income/Expense:</label><br/>
                     <select  onChange={(e) => handleChange(e)}>
                         <option  value={["none", 0]} defaultValue>none</option>
-                        <option value={["Salary", 1500]}> Salary = 1500$</option>
-                        <option value={["phone bill", -20]}>Phone Bill = 20$</option>
-                        <option value={["Electricity Bill ", -100]} >Electricity Bill = 100$</option>
-                        <option value={["House rent", -300]}>House Rent 300$</option>
-                        <option value={["Car rent", -200]}>Car Rent 200$</option>
+                        <option value={["Salary", 1500]}> Salary = +1500$</option>
+                        <option value={["phone bill", -20]}>Phone Bill = -20$</option>
+                        <option value={["Electricity Bill ", -100]} >Electricity Bill = -100$</option>
+                        <option value={["House rent", -300]}>House Rent -300$</option>
+                        <option value={["Car rent", -200]}>Car Rent -200$</option>
                         
                     </select>
                 </div>
-                <button>Add </button>
+                <button>Add </button><br/>
 
             </form><button onClick={clear}>Clear </button>
         </div>
